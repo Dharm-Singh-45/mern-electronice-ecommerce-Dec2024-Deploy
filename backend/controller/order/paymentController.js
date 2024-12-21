@@ -41,7 +41,7 @@ const paymentController = async (req, res) => {
           quantity : item.quantity
         };
       }),
-      success_url : `${process.env.FRONTEND_URL}/success`,
+      success_url : `${process.env.FRONTEND_URL || "https://mern-electronice-ecommerce-dec2024-5id3.onrender.com"}/success`,
       cancel_url : `${process.env.FRONTEND_URL}/cancel`
     };
 

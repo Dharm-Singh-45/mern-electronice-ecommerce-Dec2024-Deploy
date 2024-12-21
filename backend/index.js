@@ -10,9 +10,13 @@ dotenv.config()
 const app = express()
 
 app.use(cors({
-    origin: process.env.FRONTEND_URL || "https://mern-electronice-ecommerce-frontend.vercel.app",
-    credentials:true
-}))
+    origin: process.env.FRONTEND_URL || "https://mern-electronice-ecommerce-frontend.vercel.app", // Allows only the frontend's URL
+    credentials: true, // Allows cookies to be sent with requests
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify allowed HTTP methods
+    allowedHeaders: ['Content-Type', 'Authorization'], // Specify allowed headers
+}));
+
+
 app.use(express.json())
 app.use(cookieParser())
 // routes 

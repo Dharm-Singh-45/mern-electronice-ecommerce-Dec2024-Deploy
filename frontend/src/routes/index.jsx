@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { App } from "../app";
+import  {App}  from "../app";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import ForgotPassword from "../pages/ForgotPassword";
@@ -38,7 +38,7 @@ const router = createBrowserRouter([
         element: <SignUp />,
       },
       {
-        path: "product-category",   ///:categoryName
+        path: "product-category",  
         element: <CategoryProduct />,
       },
       {

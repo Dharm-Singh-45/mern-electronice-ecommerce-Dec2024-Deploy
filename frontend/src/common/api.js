@@ -1,4 +1,4 @@
-const backEndDomain = "https://mern-electronice-ecommerce-dec2024-deploy-ntyz.vercel.app";
+const backEndDomain = "https://mern-electronice-ecommerce-dec2024-deploy.onrender.com";
 
 const SummaryApi = {
   signUp: {

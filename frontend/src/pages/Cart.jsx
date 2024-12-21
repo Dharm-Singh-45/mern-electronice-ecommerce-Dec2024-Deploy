@@ -18,7 +18,7 @@ const Cart = () => {
     try {
       // setLoading(true);
       const response = await axios.get(
-        "https://mern-electronice-ecommerce-dec2024-deploy-ntyz.vercel.app/api/viewCartProduct",
+        "https://mern-electronice-ecommerce-dec2024-deploy.onrender.com/api/viewCartProduct",
         {
           withCredentials: true,
           headers: {
@@ -48,7 +48,7 @@ const Cart = () => {
   const increaseQty = async (id, qty) => {
     try {
       const response = await axios.post(
-        "https://mern-electronice-ecommerce-dec2024-deploy-ntyz.vercel.app/api/update-cart-product",
+        "https://mern-electronice-ecommerce-dec2024-deploy.onrender.com/api/update-cart-product",
         { quantity: qty + 1, _id: id },
         {
           withCredentials: true,
@@ -67,7 +67,7 @@ const Cart = () => {
     if (qty >= 2) {
       try {
         const response = await axios.post(
-          "https://mern-electronice-ecommerce-dec2024-deploy-ntyz.vercel.app/api/update-cart-product",
+          "https://mern-electronice-ecommerce-dec2024-deploy.onrender.com/api/update-cart-product",
           { quantity: qty - 1, _id: id },
           {
             withCredentials: true,
@@ -87,7 +87,7 @@ const Cart = () => {
   const deleteCartProduct = async (id) => {
     try {
       const response = await axios.post(
-        "https://mern-electronice-ecommerce-dec2024-deploy-ntyz.vercel.app/api/delete-cart-product",
+        "https://mern-electronice-ecommerce-dec2024-deploy.onrender.com/api/delete-cart-product",
         { _id: id },
         {
           withCredentials: true,
@@ -117,7 +117,7 @@ const Cart = () => {
   const handlePayment = async () => {
    try {
     const stripePromise = await loadStripe('pk_test_51QXmNIF9CPxTPhc9TQanbWfLtV7q65Tsz83mkkNIIKm23aULQFed9PAv7iTuyZXlEBkUzE3MDCKKxmEb8BG1iLT700J4OSLBQs');
-    const response = await axios.post("https://mern-electronice-ecommerce-dec2024-deploy-ntyz.vercel.app/api/checkout",{
+    const response = await axios.post("https://mern-electronice-ecommerce-dec2024-deploy.onrender.com/api/checkout",{
      cartItems: data
     },{
       withCredentials:true,

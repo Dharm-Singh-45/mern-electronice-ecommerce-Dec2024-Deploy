@@ -31,7 +31,7 @@ const searchQuery = urlSearch.getAll("q")
   const handleLogout = async () => {
     try {
       const response = await axios.get(
-        "https://mern-electronice-ecommerce-dec2024-deploy-ntyz.vercel.app/api/user-logout",
+        "https://mern-electronice-ecommerce-dec2024-deploy.onrender.com/api/user-logout",
         { withCredentials: true }
       );
 

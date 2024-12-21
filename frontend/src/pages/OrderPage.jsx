@@ -8,7 +8,7 @@ const OrderPage = () => {
 
   const fetchOrderDetails = async () => {
     try {
-      const response = await axios.get("https://mern-electronice-ecommerce-dec2024-deploy-ntyz.vercel.app/api/order-list", {
+      const response = await axios.get("https://mern-electronice-ecommerce-dec2024-deploy.onrender.com/api/order-list", {
         withCredentials: true,
         headers: {
           "Content-Type": "application/json",

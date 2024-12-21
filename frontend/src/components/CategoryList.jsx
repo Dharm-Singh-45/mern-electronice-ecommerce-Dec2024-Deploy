@@ -13,7 +13,7 @@ const CategoryList = () => {
     setLoading(true);
     try {
       const response = await axios.get(
-        "https://mern-electronice-ecommerce-dec2024-deploy-ntyz.vercel.app/api/get-categoryProduct"
+        "https://mern-electronice-ecommerce-dec2024-deploy.onrender.com/api/get-categoryProduct"
       );
 
       setLoading(false);

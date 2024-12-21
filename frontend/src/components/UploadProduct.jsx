@@ -61,7 +61,7 @@ const UploadProduct = ({ onClose,fetchData }) => {
   const handelSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("https://mern-electronice-ecommerce-dec2024-deploy-ntyz.vercel.app/api/upload-product",
+      const response = await axios.post("https://mern-electronice-ecommerce-dec2024-deploy.onrender.com/api/upload-product",
       data,
       {withCredentials:true,
         headers:{

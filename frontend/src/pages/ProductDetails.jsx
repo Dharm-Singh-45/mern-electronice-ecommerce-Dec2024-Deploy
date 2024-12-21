@@ -41,7 +41,7 @@ const ProductDetails = () => {
     setLoading(true);
     try {
       const response = await axios.post(
-        "https://mern-electronice-ecommerce-dec2024-deploy-ntyz.vercel.app/api/product-details",
+        "https://mern-electronice-ecommerce-dec2024-deploy.onrender.com/api/product-details",
         { productId: params._id },
         {
           withCredentials: true,

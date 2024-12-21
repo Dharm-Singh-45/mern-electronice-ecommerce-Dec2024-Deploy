@@ -7,7 +7,7 @@ const addToCart = async (e, id) => {
 
   try {
     const response = await axios.post(
-      "https://mern-electronice-ecommerce-dec2024-deploy-ntyz.vercel.app/api/addtocart",
+      "https://mern-electronice-ecommerce-dec2024-deploy.onrender.com/api/addtocart",
       {
         productId : id,
       },

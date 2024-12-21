@@ -19,7 +19,7 @@ function AppContent() {
 
   const fetchUserDetails = async () => {
     try {
-      const response = await axios.get("https://mern-electronice-ecommerce-dec2024-deploy-ntyz.vercel.app/api/user-details", {
+      const response = await axios.get("https://mern-electronice-ecommerce-dec2024-deploy.onrender.com/api/user-details", {
         withCredentials: true,
       });
       dispatch(setUserDetails(response.data));
@@ -30,7 +30,7 @@ function AppContent() {
 
   const fetchUserAddToCart = async() =>{
     try {
-      const response = await axios.get("https://mern-electronice-ecommerce-dec2024-deploy-ntyz.vercel.app/api/countAddToProduct",{
+      const response = await axios.get("https://mern-electronice-ecommerce-dec2024-deploy.onrender.com/api/countAddToProduct",{
         withCredentials:true
       })
 

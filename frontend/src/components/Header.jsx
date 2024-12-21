@@ -31,7 +31,7 @@ const searchQuery = urlSearch.getAll("q")
   const handleLogout = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:8080/api/user-logout",
+        "https://mern-electronice-ecommerce-dec2024-deploy-ntyz.vercel.app/api/user-logout",
         { withCredentials: true }
       );
 

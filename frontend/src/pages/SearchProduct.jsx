@@ -19,7 +19,7 @@ const SearchProduct = () => {
 
       if (searchTerm) {
         const response = await axios.get(
-          `http://localhost:8080/api/search?q=${searchTerm}`,
+          `https://mern-electronice-ecommerce-dec2024-deploy-ntyz.vercel.app/api/search?q=${searchTerm}`,
           {
             withCredentials: true,
             headers: {

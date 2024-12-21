@@ -16,7 +16,7 @@ const AllUsers = () => {
 
   const fetchAllUsers = async () => {
     try {
-      const response = await axios.get("http://localhost:8080/api/all-users", {
+      const response = await axios.get("https://mern-electronice-ecommerce-dec2024-deploy-ntyz.vercel.app/api/all-users", {
         withCredentials: true,
       });
 

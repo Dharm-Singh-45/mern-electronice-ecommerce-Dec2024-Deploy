@@ -1,4 +1,4 @@
-const backEndDomain = "http://localhost:8080";
+const backEndDomain = "https://mern-electronice-ecommerce-dec2024-deploy-ntyz.vercel.app";
 
 const SummaryApi = {
   signUp: {

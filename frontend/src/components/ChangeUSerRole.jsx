@@ -15,7 +15,7 @@ const ChangeUSerRole = ({ name, email, role, onClose,userId,callFunc }) => {
     try {
       const data = { userId, role: userRole };
       const response = await axios.post(
-        "http://localhost:8080/api/update-users",
+        "https://mern-electronice-ecommerce-dec2024-deploy-ntyz.vercel.app/api/update-users",
         data,
         {
           withCredentials: true,

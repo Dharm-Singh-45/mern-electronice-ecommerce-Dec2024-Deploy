@@ -30,7 +30,7 @@ const CategoryProduct = () => {
   const fetchData = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/filter",
+        "https://mern-electronice-ecommerce-dec2024-deploy-ntyz.vercel.app/api/filter",
         {
           category: filterCategoryList,
         },

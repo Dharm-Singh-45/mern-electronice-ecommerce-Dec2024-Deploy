@@ -32,7 +32,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/signin",
+        "https://mern-electronice-ecommerce-dec2024-deploy-ntyz.vercel.app/api/signin",
         data,
         { withCredentials: true,
           headers: { "Content-Type": "application/json" 

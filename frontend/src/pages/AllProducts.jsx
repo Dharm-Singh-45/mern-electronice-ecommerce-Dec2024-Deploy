@@ -10,7 +10,7 @@ const AllProducts = () => {
 
   const fetchAllProduct = async()=>{
     try {
-      const response = await axios.get("http://localhost:8080/api/get-products",{withCredentials:true})
+      const response = await axios.get("https://mern-electronice-ecommerce-dec2024-deploy-ntyz.vercel.app/api/get-products",{withCredentials:true})
 
       setAllProducts(response?.data?.data || [])
       

@@ -5,7 +5,7 @@ import { toast } from "react-toastify"
 const fetchCategoryWiseProduct = async (category) => {
     try {
         const response = await axios.post(
-            "http://localhost:8080/api/category-product",
+            "https://mern-electronice-ecommerce-dec2024-deploy-ntyz.vercel.app/api/category-product",
             { category }, // Pass category in the request body
             {
                 withCredentials: true,

@@ -48,7 +48,7 @@ const SignUp = () => {
     if (data.password === data.confirmPassword) {
       try {
         const response = await axios.post(
-          "http://localhost:8080/api/signup",
+          "https://mern-electronice-ecommerce-dec2024-deploy-ntyz.vercel.app/api/signup",
           data,
           {
             headers: { "Content-Type": "application/json" },

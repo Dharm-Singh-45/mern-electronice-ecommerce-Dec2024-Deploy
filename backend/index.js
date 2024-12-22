@@ -5,19 +5,19 @@ import connectDb from './config/db.js'
 import router from './routes/index.js'
 import cookieParser from 'cookie-parser'
 
-dotenv.config()
+dotenv.config();
 
 const app = express()
 
-app.options('*', cors());
 
-// app.use(cors({
-//     origin: process.env.FRONTEND_URL || "https://mern-electronice-ecommerce-frontend.vercel.app", // Allows only the frontend's URL
-//     credentials: true, // Allows cookies to be sent with requests
-//     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify allowed HTTP methods
-//     allowedHeaders: ['Content-Type', 'Authorization'], // Specify allowed headers
-// }));
 
+app.use(
+    cors({
+      origin: [process.env.FRONTEND_URL,],
+      methods: ["GET", "POST", "DELETE", "PUT"],
+      credentials: true,
+    })
+  );
 
 app.use(express.json())
 app.use(cookieParser())

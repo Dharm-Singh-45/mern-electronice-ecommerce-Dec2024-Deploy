@@ -11,6 +11,7 @@ import { store } from "./store/store";
 import { setUserDetails } from "./store/userSlice";
 import { useDispatch } from "react-redux";
 import api from "./common/api"
+import wakeUpBackend from "./utils/wakeBackend";
 
 function AppContent() {
   const dispatch = useDispatch();
@@ -38,9 +39,14 @@ function AppContent() {
   }
 
   useEffect(() => {
+    // awake backend api
+    wakeUpBackend()
+
+    // fetch user details
     fetchUserDetails();
     // cart
     fetchUserAddToCart()
+
   }, []);
 
   

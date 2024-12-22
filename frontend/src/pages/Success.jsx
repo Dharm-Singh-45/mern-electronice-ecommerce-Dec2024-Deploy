@@ -2,6 +2,7 @@ import React from "react";
 import successImage from "../assest/success.gif";
 import { Link } from "react-router-dom";
 
+
 const Success = () => {
   return (
     <div className="bg-slate-200 w-full max-w-md mx-auto flex justify-center items-center flex-col p-4 m-2 rounded">

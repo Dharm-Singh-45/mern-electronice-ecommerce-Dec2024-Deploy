@@ -23,8 +23,14 @@ import paymentController from "../controller/order/paymentController.js";
 import webhooks from "../controller/order/webhooks.js";
 import orderController from "../controller/order/orderController.js";
 import allOrdersController from "../controller/order/allOrderController.js";
+import wakeUpBackend from "../helpers/wakeUpBackend.js";
 
 const router = express.Router();
+
+//  wakeup backend 
+router.get('/health',wakeUpBackend)
+
+
 
 router.post('/signup',userSignUpController)
 router.post('/signin',userSignInController)
